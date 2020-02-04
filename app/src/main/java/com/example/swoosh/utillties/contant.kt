@@ -1,3 +1,3 @@
-package com.example.swoosh
+package com.example.swoosh.utillties
 
-const val EXTRA_LEAGUE = "league"
+const val EXTRA_PLAYER = ""

@@ -15,4 +15,6 @@
     <string name="baller">BALLER</string>
     <string name="button">Button</string>
     <string name="next">NEXT</string>
+    <string name="seach_league">looking for a co-ed beginner league near you</string>
+    <string name="search_leaguetext">TextView</string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -61,12 +61,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
-            android:id="@+id/toggleButton7"
+            android:id="@+id/menleaguebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onMensClicked"
             android:text="@string/mens"
             android:textColor="@color/colorAccent"
             android:textColorLink="#FCFFFFFF"
@@ -75,12 +76,13 @@
             tools:text="string/mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton8"
+            android:id="@+id/womenleaguebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onWomensClicked"
             android:text="@string/womens"
             android:textColor="@color/colorAccent"
             android:textColorLink="#FCFFFFFF"
@@ -90,12 +92,13 @@
             tools:visibility="visible" />
 
         <ToggleButton
-            android:id="@+id/toggleButton10"
+            android:id="@+id/coedleaguebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onCoedClicked"
             android:text="@string/co_ed"
             android:textColor="@color/colorAccent"
             android:textColorLink="#FCFFFFFF"
@@ -113,6 +116,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="leagueNextClicked"
         android:text="@string/next"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
